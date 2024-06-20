@@ -1,8 +1,37 @@
 <?php
 
-$discs = file_get_contents(__DIR__ . '/discs.json');
+header('Content-Type: application/json');
 
-echo $discs;
+$jsonData = file_get_contents(__DIR__ . '/discs.json');
+$discs = json_decode($jsonData, true);
+
+// $discs = file_get_contents(__DIR__ . '/discs.json');
+
+// var_dump($_GET['id']);
+
+function findDiscById($id, $discs)
+{
+    foreach ($discs as $disc) {
+        if ($disc['id'] == $id) {
+            return $disc;
+        }
+    }
+    return null;
+}
+
+if (isset($_GET['id'])) {
+    $id = intval($_GET['id']);
+    $disc = findDiscById($id, $discs);
+    if ($disc) {
+        echo json_encode($disc);
+    } else {
+        http_response_code(404);
+        echo json_encode(["error" => "Disc not found"]);
+    }
+} else {
+    echo $jsonData; // Restituisce il contenuto del file JSON
+}
+
 
 // header('Content-Type: application/json');
 

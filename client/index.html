@@ -36,7 +36,11 @@
       <main>
         <div class="container">
           <div class="card-container">
-            <div v-for="disc in this.discs" class="card">
+            <div
+              v-for="disc in this.discs"
+              class="card"
+              @click="this.searchById(disc.id)"
+            >
               <div class="poster">
                 <img :src="disc.poster" alt="disc.title" />
               </div>
