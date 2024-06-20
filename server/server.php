@@ -29,10 +29,8 @@ if (isset($_GET['id'])) {
         echo json_encode(["error" => "Disc not found"]);
     }
 } else {
-    echo $jsonData; // Restituisce il contenuto del file JSON
+    echo $jsonData; // Return the JSON file content 
 }
-
-
 // header('Content-Type: application/json');
 
 // json_encode($discs);

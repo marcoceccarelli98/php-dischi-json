@@ -2,11 +2,18 @@
 
 body {
   font-family: "Orbitron", sans-serif;
-  background-color: rgb(50, 50, 50);
+  background: linear-gradient(
+    90deg,
+    rgb(0, 0, 0) 0%,
+    rgb(50, 50, 50) 20%,
+    rgb(8, 125, 0) 50%,
+    rgb(50, 50, 50) 80%,
+    rgb(0, 0, 0) 100%
+  );
 }
 
 header {
-  background-color: purple;
+  background-color: rgba(50, 50, 50, 0.7);
   padding: 30px;
 }
 
@@ -19,18 +26,22 @@ header h1 {
 }
 
 .card {
-  border-radius: 20px;
-  background-color: rgba(128, 0, 128, 0.7);
+  border-radius: 10px;
+  background-color: rgba(50, 50, 50, 1);
   padding: 20px 20px 0 20px;
 }
 
 .card .poster img {
-  /* width: 70%; */
+  border-radius: 10px;
 }
 
 .text-content {
   padding: 10px 10px 20px 10px;
   color: white;
+}
+
+.text-content h2 {
+  margin: 10px 0;
 }
 
 .card .text-content .card-text-right {
@@ -46,7 +57,8 @@ header h1 {
   bottom: 100px;
   left: 100px;
   right: 100px;
-  background-color: rgba(128, 0, 128, 0.95);
+  z-index: 1;
+  background-color: rgba(50, 50, 50, 0.95);
   border: 1px solid white;
   border-radius: 20px;
 }
@@ -54,6 +66,10 @@ header h1 {
 .info-container {
   position: relative;
   display: flex;
+}
+
+.info-container .poster img {
+  /* width: 100%; */
 }
 
 .info-container .exit-cross {
