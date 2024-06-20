@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
-      title: "Disc",
+      title: "Techno Music",
       urlDiscs: "http://localhost/php-dischi-json/server/server.php",
       discs: [],
       loading: false,

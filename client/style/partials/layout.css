@@ -1,0 +1,30 @@
+/* CONTAINERS */
+.container {
+  /* max-width: 1200px; */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-container {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* LAYOUT */
+.row {
+  display: flex;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-70 {
+  width: 70%;
+}
