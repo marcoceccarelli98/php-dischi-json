@@ -12,7 +12,7 @@ $discs = json_decode($jsonData, true);
 function findDiscById($id, $discs)
 {
     foreach ($discs as $disc) {
-        if ($disc['id'] == $id) {
+        if ($disc['id'] === $id) {
             return $disc;
         }
     }
@@ -31,6 +31,3 @@ if (isset($_GET['id'])) {
 } else {
     echo $jsonData; // Return the JSON file content 
 }
-// header('Content-Type: application/json');
-
-// json_encode($discs);

@@ -24,8 +24,13 @@
   <body>
     <div id="app" v-cloak>
       <header>
-        <div class="container">
-          <h1>{{ title }} <i class="fa-solid fa-bolt"></i></h1>
+        <div class="d-flex container">
+          <div class="col-50">
+            <h1>{{ title }} <i class="fa-solid fa-bolt white"></i></h1>
+          </div>
+          <div class="col-50 text-right">
+            <a @click="this.openCreateDisc"><i class="fas fa-plus"></i></a>
+          </div>
         </div>
       </header>
       <main>
@@ -88,6 +93,66 @@
             </div>
           </section>
           <!-- /INFO POPUP -->
+          <!-- CREATE DISC POPUP -->
+          <section class="create-disc-popup" v-show="this.showCreateDisc">
+            <div class="create-disc-container">
+              <div class="exit-cross" @click="this.closeCreateDisc">
+                <i class="fas fa-xmark"></i>
+              </div>
+              <div class="create-disc-content">
+                <div class="content-center-y">
+                  <form action="" @submit.prevent="this.addDisc">
+                    <div class="form-content">
+                      <label for="title">Title :</label>
+                      <input type="text" name="title" v-model="this.newTitle" />
+                    </div>
+                    <div class="form-content">
+                      <label for="artist">Artist :</label>
+                      <input
+                        type="text"
+                        name="artist"
+                        v-model="this.newArtist"
+                      />
+                    </div>
+                    <div class="form-content">
+                      <label for="poster">Poster(URL) :</label>
+                      <input
+                        type="text"
+                        name="poster"
+                        v-model="this.newPoster"
+                      />
+                    </div>
+                    <div class="form-content">
+                      <label for="album">Album :</label>
+                      <input type="text" name="album" v-model="this.newAlbum" />
+                    </div>
+                    <div class="form-content">
+                      <label for="date">Year :</label>
+                      <input type="text" name="date" v-model="this.newDate" />
+                    </div>
+                    <div class="form-content">
+                      <label for="plays">Plays :</label>
+                      <input
+                        type="number"
+                        name="plays"
+                        v-model="this.newPlays"
+                      />
+                    </div>
+                    <div class="form-content">
+                      <label for="durationSec">Duration(Seconds) :</label>
+                      <input
+                        type="number"
+                        name="durationSec"
+                        v-model="this.newDurationSec"
+                      />
+                    </div>
+                    <button>Add Disc</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /CREATE DISC POPUP -->
         </div>
       </main>
     </div>

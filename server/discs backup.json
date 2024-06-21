@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "title": "Drift",
+    "artist": "Amelie Lens",
+    "poster": "https://i1.sndcdn.com/artworks-000217317902-2iigr2-t500x500.jpg",
+    "album": "Contradiction",
+    "date": "2017",
+    "plays": 10034378,
+    "durationSec": 398
+  },
+  {
+    "id": 2,
+    "title": "Ghetto Kraviz",
+    "artist": "Nina Kraviz",
+    "poster": "https://i1.sndcdn.com/artworks-UBLQSnUdSUn3lWzs-Q7CWQQ-t500x500.jpg",
+    "album": false,
+    "date": "2011",
+    "plays": 80124863,
+    "durationSec": 225
+  },
+  {
+    "id": 3,
+    "title": "Sky & Sand",
+    "artist": "Paul Kalkbrenner",
+    "poster": "https://i1.sndcdn.com/artworks-000004387232-zbjkdi-t500x500.jpg",
+    "album": "Belin Calling",
+    "date": "2008",
+    "plays": 10145783,
+    "durationSec": 240
+  },
+  {
+    "id": 4,
+    "title": "X-Pollination",
+    "artist": "Enrico Sangiuliano",
+    "poster": "https://i1.sndcdn.com/artworks-000154584441-tema3z-t500x500.jpg",
+    "album": "X-Pollination",
+    "date": "2016",
+    "plays": 775.129,
+    "durationSec": 493
+  },
+  {
+    "id": 5,
+    "title": "High Street",
+    "artist": "Charlotte de Witte",
+    "poster": "https://i1.sndcdn.com/artworks-6fqFtDRjA3cBmMDz-FFbwqA-t500x500.jpg",
+    "album": "High Street",
+    "date": "2023",
+    "plays": 4545783,
+    "durationSec": 225
+  },
+  {
+    "id": 6,
+    "title": "Vacaciones En Chile",
+    "artist": "Ilario Alicante",
+    "poster": "https://i1.sndcdn.com/artworks-PsGhEyVXqz20xH7G-Psi6uQ-t500x500.jpg",
+    "album": "Warm Vibes",
+    "date": "2008",
+    "plays": 1405783,
+    "durationSec": 590
+  },
+  {
+    "id": 7,
+    "title": "I Want You (Forever)",
+    "artist": "Carl Cox",
+    "poster": "https://i1.sndcdn.com/artworks-b602fbf6-009b-4a80-ac91-c1a4dbec917b-0-t500x500.jpg",
+    "album": "I Want You",
+    "date": "1991",
+    "plays": 6145783,
+    "durationSec": 181
+  },
+  {
+    "id": 8,
+    "title": "Un Mondo Migliore",
+    "artist": "Gigi d'Agostino",
+    "poster": "https://i.scdn.co/image/ab67616d0000b273146317720900c5af9a1a9f53",
+    "album": "Lento violento",
+    "date": "2007",
+    "plays": 2245783,
+    "durationSec": 301
+  }
+]
