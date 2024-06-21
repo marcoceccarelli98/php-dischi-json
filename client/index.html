@@ -25,12 +25,7 @@
     <div id="app" v-cloak>
       <header>
         <div class="container">
-          <div class="row">
-            <div class="col-50">
-              <h1>{{ title }} <i class="fa-solid fa-bolt"></i></h1>
-            </div>
-            <div class="col-50"></div>
-          </div>
+          <h1>{{ title }} <i class="fa-solid fa-bolt"></i></h1>
         </div>
       </header>
       <main>
@@ -65,27 +60,29 @@
               <div class="exit-cross" @click="this.closeInfo">
                 <i class="fas fa-xmark"></i>
               </div>
-              <div class="col-50">
-                <div class="poster">
-                  <img
-                    :src="this.searchResult.poster"
-                    :alt="this.searchResult.title"
-                  />
+              <div class="info-content">
+                <div class="col-50">
+                  <div class="poster">
+                    <img
+                      :src="this.searchResult.poster"
+                      :alt="this.searchResult.title"
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="col-50 content-center-y">
-                <div class="text-content">
-                  <h2>Title : {{ this.searchResult.title }}</h2>
-                  <h3>Artist : {{ this.searchResult.artist }}</h3>
-                  <h3>Album : {{ this.searchResult.album }}</h3>
-                  <h3>Year : {{ this.searchResult.date }}</h3>
-                  <h3>
-                    Plays : {{ this.getPlaysNum(this.searchResult.plays) }}
-                  </h3>
-                  <h3>
-                    Duration : {{
-                    this.getDuration(this.searchResult.durationSec) }}
-                  </h3>
+                <div class="col-50 content-center-y">
+                  <div class="text-content">
+                    <h2>Title : {{ this.searchResult.title }}</h2>
+                    <h3>Artist : {{ this.searchResult.artist }}</h3>
+                    <h3>Album : {{ this.searchResult.album }}</h3>
+                    <h3>Year : {{ this.searchResult.date }}</h3>
+                    <h3>
+                      Plays : {{ this.getPlaysNum(this.searchResult.plays) }}
+                    </h3>
+                    <h3>
+                      Duration : {{
+                      this.getDuration(this.searchResult.durationSec) }}
+                    </h3>
+                  </div>
                 </div>
               </div>
             </div>

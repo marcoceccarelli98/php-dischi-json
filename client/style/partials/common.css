@@ -49,10 +49,17 @@ header h1 {
   margin: 10px 0;
 }
 
-.content-center-y .text-content h2,
+.content-center-y .text-content h2 {
+  font-size: 40px;
+}
+
 .content-center-y .text-content h3 {
-  font-size: 50px;
+  font-size: 40px;
   margin: 50px 0;
+}
+
+.content-center-y .text-content h3:last-of-type {
+  margin-bottom: 0;
 }
 
 .card .text-content .card-text-right {
@@ -76,7 +83,7 @@ header h1 {
 
 .info-container {
   position: relative;
-  display: flex;
+  /* display: flex; */
   height: 100%;
 }
 
@@ -91,6 +98,13 @@ header h1 {
   width: 75%;
 }
 
+.info-container .info-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .info-container .exit-cross {
   position: absolute;
   top: 10px;
@@ -100,4 +114,53 @@ header h1 {
   border-radius: 50%;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .col-50 {
+    width: 100%;
+  }
+
+  .info-container .info-content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .info-container .poster img {
+    max-width: 500px;
+  }
+
+  .text-content {
+    text-align: center;
+  }
+
+  .content-center-y {
+    justify-content: center;
+  }
+
+  .content-center-y .text-content h2,
+  .content-center-y .text-content h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  header .container {
+    text-align: center;
+  }
+
+  .info-popup {
+    padding: 30px;
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card .poster img {
+    width: 300px;
+    height: 300px;
+  }
 }
